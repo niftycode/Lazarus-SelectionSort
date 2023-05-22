@@ -1,0 +1,68 @@
+object Form1: TForm1
+  Left = 861
+  Height = 495
+  Top = 370
+  Width = 831
+  Caption = 'Form1'
+  ClientHeight = 495
+  ClientWidth = 831
+  DesignTimePPI = 192
+  LCLVersion = '2.2.6.0'
+  object SelectionSortLabel: TLabel
+    Left = 10
+    Height = 50
+    Top = 10
+    Width = 227
+    Caption = 'Selection Sort'
+    Font.Height = -37
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 50
+    Top = 160
+    Width = 278
+    Caption = 'Zahlen sortieren'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 50
+    Top = 424
+    Width = 150
+    Caption = 'Beenden'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 50
+    Top = 88
+    Width = 592
+    Caption = 'Zahlen: 24, 77, 5, 37, 26, 50, 79, 20, 4'
+    Font.Height = -37
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 50
+    Top = 304
+    Width = 149
+    Caption = 'Ergebnis:'
+    Font.Height = -37
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 216
+    Height = 1
+    Top = 304
+    Width = 1
+    Font.Height = -37
+    ParentColor = False
+    ParentFont = False
+  end
+end
