@@ -14,12 +14,14 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     SelectionSortLabel: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
 
   public
@@ -40,7 +42,7 @@ const
   SIZE = 9;
 
 var
-  arr: array[1..SIZE] of Integer = (24, 77, 5, 37, 26, 50, 79, 20, 4);
+  arr: array[1..SIZE] of Integer;
   i, j, min, temp: Integer;
 
 procedure SelectionSort;
@@ -75,6 +77,16 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  randomize;
+  for i := 1 to SIZE do
+    arr[i] := random(9);
+  Label1.Caption := '';
+  for i := 1 to SIZE do
+    Label1.Caption := Label1.Caption + IntToStr(arr[i]) + ' ';
 end;
 
 end.

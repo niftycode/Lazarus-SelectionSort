@@ -1,34 +1,34 @@
 object Form1: TForm1
-  Left = 861
+  Left = 836
   Height = 495
-  Top = 370
+  Top = 337
   Width = 831
-  Caption = 'Form1'
+  Caption = 'Selection Sort Demo'
   ClientHeight = 495
   ClientWidth = 831
   DesignTimePPI = 192
   LCLVersion = '2.2.6.0'
   object SelectionSortLabel: TLabel
-    Left = 10
+    Left = 35
     Height = 50
     Top = 10
-    Width = 227
-    Caption = 'Selection Sort'
+    Width = 336
+    Caption = 'Selection Sort Demo'
     Font.Height = -37
     ParentColor = False
     ParentFont = False
   end
   object Button1: TButton
-    Left = 16
+    Left = 35
     Height = 50
-    Top = 160
+    Top = 232
     Width = 278
     Caption = 'Zahlen sortieren'
     OnClick = Button1Click
     TabOrder = 0
   end
   object Button2: TButton
-    Left = 10
+    Left = 35
     Height = 50
     Top = 424
     Width = 150
@@ -36,31 +36,40 @@ object Form1: TForm1
     OnClick = Button2Click
     TabOrder = 1
   end
-  object Label1: TLabel
-    Left = 16
-    Height = 50
-    Top = 88
-    Width = 592
-    Caption = 'Zahlen: 24, 77, 5, 37, 26, 50, 79, 20, 4'
-    Font.Height = -37
-    ParentColor = False
-    ParentFont = False
-  end
   object Label2: TLabel
-    Left = 32
+    Left = 40
     Height = 50
-    Top = 304
-    Width = 149
-    Caption = 'Ergebnis:'
+    Top = 312
+    Width = 269
+    Caption = 'Sortierte Zahlen:'
     Font.Height = -37
     ParentColor = False
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 216
+    Left = 344
     Height = 1
-    Top = 304
+    Top = 312
     Width = 1
+    Font.Height = -37
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 35
+    Height = 50
+    Top = 80
+    Width = 281
+    Caption = 'Zahlen erzeugen'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 50
+    Top = 152
+    Width = 489
+    Caption = 'Auf "Zahlen erzeugen" klicken'
     Font.Height = -37
     ParentColor = False
     ParentFont = False
