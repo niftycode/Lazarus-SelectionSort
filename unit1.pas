@@ -47,9 +47,9 @@ var
 
 procedure SelectionSort;
 begin
-  for i := 1 to SIZE - 1 do
+  for i := 1 to SIZE do
   begin
-    min := i;
+    min := i; // 27
     for j := i + 1 to SIZE do
     begin
       if arr[j] < arr[min] then
@@ -58,7 +58,7 @@ begin
 
     if min <> i then
     begin
-      temp := arr[i];
+      temp := arr[i]; // 27
       arr[i] := arr[min];
       arr[min] := temp;
     end;
@@ -66,7 +66,6 @@ begin
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
-
 begin
   SelectionSort;
   Label3.Caption := '';
